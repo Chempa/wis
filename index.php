@@ -48,7 +48,7 @@
 	<title>WIS - Women In Statistics Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="logo.png">
+	<meta property="og:image" content="share.png">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
