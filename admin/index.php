@@ -41,8 +41,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../images/icons/favicon.png"/>
-    <title>Wis Admin - Women In Statistics Login</title>
-    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <title>Wis Admin - Women In Statistics Login</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 
     <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
