@@ -37,10 +37,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+    <meta property="og:image" content="share.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../images/icons/favicon.png"/>
-    <title>Wis Admin - Login</title>
+    <title>Wis Admin - Women In Statistics Login</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 
