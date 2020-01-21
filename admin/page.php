@@ -21,32 +21,28 @@
         ";
         $ALL = $u->getall($con, $query);
     }
-    else if($q == 0){
+    else if($q == 1){
         $query = "select * from users";
         $ALL = $u->getall($con, $query);
-    }
-    else if ($q == 1) {
-        $query = "select * from users where category = 'Junior High School'";
-        $ALL = $u->getall($con, $query);
-    }
+    } 
     else if ($q == 2) {
         $query = "select * from users where category = 'Senior High School'";
         $ALL = $u->getall($con, $query);
     }
     else if ($q == 3) {
-        $query = "select * from users where category = 'University (Undergraduate)'";
+        $query = "select * from users where category = 'Regular University (UnderGraduate)'";
         $ALL = $u->getall($con, $query);
     }
     else if ($q == 4) {
-        $query = "select * from users where category = 'University (Masters)'";
+        $query = "select * from users where category = 'Technical University (UnderGraduate)'";
         $ALL = $u->getall($con, $query);
     }
     else if ($q == 5) {
-        $query = "select * from users where category = 'Graduate'";
+        $query = "select * from users where category = 'Regular University (Graduate)'";
         $ALL = $u->getall($con, $query);
     }
     else if ($q == 6) {
-        $query = "select * from users where category = 'Lecturer'";
+        $query = "select * from users where category = 'Technical University (Graduate)'";
         $ALL = $u->getall($con, $query);
     }else{
         $query = "select * from users";
@@ -151,25 +147,31 @@
                     </li>
                     <li class="menu-title">Categories</li><!-- /.menu-title -->
                     <li>
-                        <a href="page.php?q=0">ALL</a>
+                        <a href="page.php?q=1">ALL</a>
                     </li>
-                    <li>
+                   <!--  <li>
                         <a href="page.php?q=1">JHS</a>
-                    </li>
+                    </li> -->
+                  <!--   <option style="font-style: italic;" value="" disabled selected>Select One</option>
+                    <option value="Senior High School">Senior High School</option>
+                    <option value="Regular University (UnderGraduate)">Regular University (UnderGraduate)</option>
+                    <option value="Regular University (Graduate)">Regular University (Graduate)</option>
+                    <option value="Technical University (UnderGraduate)">Technical University (UnderGraduate)</option>
+                    <option value="Technical University (Graduate)">Technical University (Graduate)</option> -->
                     <li>
                         <a href="page.php?q=2">SHS</a>
                     </li>
                     <li>
-                        <a href="page.php?q=3">Under-Graduate</a>
+                        <a href="page.php?q=3">Regular University UnderGraduate</a>
                     </li>
                     <li>
-                        <a href="page.php?q=4">Masters</a>
+                        <a href="page.php?q=4">Technical University UnderGraduate</a>
                     </li>
                     <li>
-                        <a href="page.php?q=5">Graduate</a>
+                        <a href="page.php?q=5">Regular University Graduate</a>
                     </li>
                     <li>
-                        <a href="page.php?q=6">Lecturer</a>
+                        <a href="page.php?q=6">Technical University Graduate</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
