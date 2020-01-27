@@ -232,7 +232,7 @@
                                         <thead>
                                             <tr>
                                                 <th class="serial">#</th>
-                                                <th class="avatar">Modify</th>
+                                                <th">Modify</th>
                                                 <th>Name</th>
                                                 <th>Level</th>
                                                 <th>Major/Minor</th>
@@ -249,7 +249,7 @@
                                             ?>
                                             <tr>
                                                 <td class="serial"><?php echo $i+1; ?></td>
-                                                <td class="avatar">
+                                                <td>
                                                     <a href="delete.php?user=<?php echo $j->id; ?>" class="badge badge-danger text-white">Delete <i class="fa fa-trash"></i></a>
 <!--                                                      <a disabled href="edit.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Edit <i class="fa fa-edit"></i></a> -->
                                                 </td>
