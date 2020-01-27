@@ -12,6 +12,7 @@
 			$this->ismajor = "";
 			$this->institution = "";
 			$this->program = "";
+			$this->id = "";
 		}
 		public function insert($con,$obj)
 		{
@@ -55,6 +56,7 @@
 				$u->ismajor = $row['ismajor'];
 				$u->institution = $row['institution']; 
 				$u->program = $row['program']; 
+				$u->id = $row['id'];
 				array_push($all_users, $u);
 			} 
 			return $all_users;
@@ -76,6 +78,7 @@
 				$u->ismajor = $row['ismajor'];
 				$u->institution = $row['institution'];
 				$u->program = $row['program'];
+				$u->id = $row['id'];
 			}else{
 				return NULL;
 			}
@@ -97,6 +100,7 @@
 				$u->ismajor = $row['ismajor'];
 				$u->institution = $row['institution']; 
 				$u->program = $row['program']; 
+				$u->id = $row['id'];
 				array_push($all_users, $u);
 			} 
 			return $all_users;
