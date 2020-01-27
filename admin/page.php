@@ -230,7 +230,7 @@
                                         <thead>
                                             <tr>
                                                 <th class="serial">#</th>
-                                                <th class="avatar">Avatar</th>
+                                                <th class="avatar">Modify</th>
                                                 <th>Name</th>
                                                 <th>Level</th>
                                                 <th>Major/Minor</th>
@@ -248,9 +248,7 @@
                                             <tr>
                                                 <td class="serial"><?php echo $i+1; ?></td>
                                                 <td class="avatar">
-                                                    <div class="round-img">
-                                                        <a href="#"><img class="rounded-circle" src="images/admin.png" alt=""></a>
-                                                    </div>
+                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-danger text-white">Delete<i class="fa fa-check">
                                                 </td>
                                                 <td> <span class="name"><?php echo $j->lastname. ', ' . $j->othername . ' ' . $j->firstname; ?></span> </td>
                                                 <td> <span class="product"><?php echo $j->category; ?></span> </td>
