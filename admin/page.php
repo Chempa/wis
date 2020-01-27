@@ -248,7 +248,7 @@
                                             <tr>
                                                 <td class="serial"><?php echo $i+1; ?></td>
                                                 <td class="avatar">
-                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-danger text-white">Delete<i class="fa fa-check">
+                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete<i class="fa fa-trash">
                                                 </td>
                                                 <td> <span class="name"><?php echo $j->lastname. ', ' . $j->othername . ' ' . $j->firstname; ?></span> </td>
                                                 <td> <span class="product"><?php echo $j->category; ?></span> </td>
