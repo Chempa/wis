@@ -249,7 +249,7 @@
                                                 <td class="serial"><?php echo $i+1; ?></td>
                                                 <td class="avatar">
                                                     <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete <i class="fa fa-trash"></a>
-                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete <i class="fa fa-trash"></a>
+                                                    <a disabled href="edit.php?user=<?php echo $j->id; ? >" class="btn btn-sm btn-danger text-white">Edit <i class="fa fa-trash"></a>
                                                 </td>
                                                 <td> <span class="name"><?php echo $j->lastname. ', ' . $j->othername . ' ' . $j->firstname; ?></span> </td>
                                                 <td> <span class="product"><?php echo $j->category; ?></span> </td>
