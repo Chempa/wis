@@ -196,8 +196,8 @@
                         <div class="form-inline">
                             <form class="search-form" action="page.php?q=-1" method="post">
                                 <input id="search" name="q" class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search" oninput="handle(this)">
-                                <button id="submit-search" class="search" type="submit"><i class="fa fa-search"></i></button>
-                                <button id="close-search" class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                                <button id="submit-search" class="search" type="submit">a fa-search"></i></button>
+                                <button id="close-search" class="search-close" type="submit"><i cl<i class="fass="fa fa-close"></i></button>
                             </form>
                         </div>
 
@@ -248,7 +248,8 @@
                                             <tr>
                                                 <td class="serial"><?php echo $i+1; ?></td>
                                                 <td class="avatar">
-                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete<i class="fa fa-trash">
+                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete <i class="fa fa-trash"></a>
+                                                    <a href="delete.php?user=<?php echo $j->id; ?>" class="btn btn-sm btn-danger text-white">Delete <i class="fa fa-trash"></a>
                                                 </td>
                                                 <td> <span class="name"><?php echo $j->lastname. ', ' . $j->othername . ' ' . $j->firstname; ?></span> </td>
                                                 <td> <span class="product"><?php echo $j->category; ?></span> </td>
