@@ -1,6 +1,7 @@
 <?php
     include '../db.php';
     include '../user.php';
+    include 'auth.php';
     $u = new User();
 
     $q = $_GET['q'];
