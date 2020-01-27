@@ -66,11 +66,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  shrink-to-fit=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="icon" type="image/png" href="../images/icons/favicon.png"/>
     <title>Wis Admin - Dashboard</title>
     <meta name="description" content="Ela Admin - HTML5 Admin Template">
-    <meta name="viewport" content="width=device-width, initial-scale=2">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=2"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
