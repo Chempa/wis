@@ -2,8 +2,8 @@
     include '../db.php';
     include 'admin.php';
     include 'sess.php';
-    if(isset($_SESSION['LGI'])){
-        if($_SESSION['LGI'] == 1){
+    if(isset($_SESSION['in'])){
+        if($_SESSION['in'] == 1){
             header( "Location: page.php?q=0" );
         }
     }
@@ -18,7 +18,7 @@
                 header( "Location: changecredential.php" );
 
             }else{
-                $_SESSION['LGI'] = 1;
+                $_SESSION['in'] = 1;
                 header( "Location: page.php?q=0" );
             }
         }else{
