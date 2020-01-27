@@ -61,6 +61,19 @@
 			} 
 			return $all_users;
 		}
+		
+		public function delete($con,$id)
+		{ 
+			$query = "
+				delete from users where id='$id';
+			";
+			$result = mysqli_query($con,$query) or die(mysql_error());
+			if($result){
+				return 1;
+			}
+			return 0; 
+		}
+		
 		public function get($con,$obj){
 			$query = "
 				select * from users
