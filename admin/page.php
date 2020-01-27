@@ -232,7 +232,7 @@
                                         <thead>
                                             <tr>
                                                 <th class="serial">#</th>
-                                                <th">Modify</th>
+                                                <th>Modify</th>
                                                 <th>Name</th>
                                                 <th>Level</th>
                                                 <th>Major/Minor</th>
