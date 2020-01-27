@@ -4,11 +4,11 @@ $terunder = "https://chat.whatsapp.com/IvYeXR7du2T48OaTVPtONj";
 $shs = "https://chat.whatsapp.com/GeqBLPA46oACCnuP9DuiNj";
 $link = "";
 if(isset($_GET["verify"])){
-  if($_GET['code'] = "0"){
-    $link = $tergrad;;
-  }else if($_GET['code']="1"){
+  if($_GET['code'] == "0"){
+    $link = $tergrad;
+  }else if($_GET['code']=="1"){
     $link = $terunder;
-  }else if($_GET['code']="2"){
+  }else if($_GET['code']=="2"){
     $link = $shs;
   }else{
 
