@@ -17,7 +17,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
     <title>
         Women in Statistics | Welcome to WIS </title>
 
-    <meta name="description" content="Jobs and careers with BBC">
+    <meta name="description" content="Women in Statistics">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- <meta property="og:image" content="https://careerssearch.bbc.co.uk/application/assets/22/images/social-logo.png" /> -->
