@@ -49,7 +49,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
     border-radius: .25rem;">
                     <i class="icon-info-sign"></i>
                     <b>Please Note: You are welcome to Women in Statistics - Ghana Club ( WIS-GH ). Use the link bellow to join WIS club and meet other women in statistics.</b> 
-                    <div class="col-12 text-center"><a class="btn text-white" href="./index.php" style="background-color: #D492E8;"> <i class="fa fa-plus"></i> Join Wis</a></div></div>
+                    <div class="col-12 text-center"><a class="btn text-white" href="./reg.php" style="background-color: #D492E8;"> <i class="fa fa-plus"></i> Join Wis</a></div></div>
 
                 <div class="main">
                     <div class="card mx-2 px-4" id="job_main" style="
