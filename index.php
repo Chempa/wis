@@ -1,215 +1,81 @@
-<?php
-	include 'db.php';
-	include 'user.php';
-	if(isset($_POST["firstname"])){
-		$obj['firstname'] = $_POST['firstname'];
-		$obj['lastname'] = $_POST['lastname'];
-		$obj['othername'] = $_POST['othername'];
-		$obj['email'] = $_POST['email'];
-		$obj['phone'] = $_POST['phone'];
-		$obj['category'] = $_POST['category'];
-		$obj['ismajor'] = $_POST['major'];
-		$obj['institution'] = $_POST['nameofinstitution'];
-		$obj['program'] = $_POST['program'];
-		$u = new User();
-		$ret = $u->insert($con, $obj);
-		if($ret == 1){
-			echo "1 USER CREATED";
-			$code = "";
-			if($category == "Senior High School"){
-				$code = 2;
-			}else if($category == "Regular University (UnderGraduate)"){
-				$code = 1;
-			}else if($category == "Regular University (Graduate)"){
-				$code = 0;
-			}else if($category == "Technical University (UnderGraduate)"){
-				$code = 1;
-			}else if ($category == "Technical University (Graduate)"){
-				$code = 0;
-			}else{
-				$code = -1;
-			}
+<!doctype html>
 
-			header( "Location: social.php?verify=HjAkw123&code=$code");
-		}
-		else if($ret == 0){
-			echo "0 USER EXISTS";
-		}else
-		{
-			echo "-1 CREATE FAILED";
-		}
-	}else{
+<!--
+This site is powered by tribepad.  More information available at www.tribepad.com
+-->
 
-	}
-?>
-<!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-	<title>WIS - Women In Statistics Form</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:image" content="share.png">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="public/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="public/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="public/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="public/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="public/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-	<style type="text/css">
-		*:focus {
-			outline: none;
-		}
-		input, select {
-	      border-top-style: hidden;
-	      border-right-style: hidden;
-	      border-left-style: hidden;
-	      border-bottom-style: hidden;
-	      background-color: #eee;
-	      border-style: none;
-	      border-width: 0;
-	    }
-	</style>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://careerssearch.bbc.co.uk/application/assets/22/images/favico.ico" type="image/x-icon" />
+    <title>
+        Women in Statistics | Welcome to WIS </title>
+
+    <meta name="description" content="Jobs and careers with BBC">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <meta property="og:image" content="https://careerssearch.bbc.co.uk/application/assets/22/images/social-logo.png" /> -->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://careerssearch.bbc.co.uk/assets/main?version=6" /> -->
+    <!-- <link rel="stylesheet" href="https://careerssearch.bbc.co.uk/application/assets/x/css/print.css?version=6&brand=22" media="print" /> -->
+    <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/jquery.js"></script>
+    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/script.js?version=6"></script>
+    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/html5shiv.js?version=6"></script>
 
 </head>
-<body style="background-color: #999999;">
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="login100-more" style="background-image: url('images/bg-03.jpg');"></div>
 
-			<div class="wrap-login100 p-l-50 p-r-50 p-b-50">
-				<form class="login100-form validate-form" method="post" action="index.php">
-					<!-- <h2 class="login100-form-title p-b-50">
-						Women In Statistics
-					</h2> -->
-					<div class="col-12 text-center">
-						<img src="logo.jpg" style="width: 250px;height: auto;">
-					</div>
-					<!-- <span class="login100-form-title p-b-59">
-						Sign Up
-					</span> -->
+<body class="advert">
+    <div id="page" class="bg-white">
+        <div class="col-12 text-center">
+            <img src="logo.jpg" style="width: 250px;height: auto;">
+        </div>
+        <div id="content" class="scroll job_page">
 
-					<div class="wrap-input100 validate-input" data-validate="First Name is required">
-						<span class="label-input100">First Name</span>
-						<input class="input100" type="text" name="firstname" placeholder1234="FirstName...">
-						<span class="focus-input100"></span>
-					</div>
+            <div>
+                <h1 class="job_title px-3 text-center">WIS - <em>Women in Statistics</em></h1>
 
-					<div class="wrap-input100 validate-input" data-validate="Last Name is required">
-						<span class="label-input100">Last Name</span>
-						<input class="input100" type="text" name="lastname" placeholder1234="Last Name...">
-						<span class="focus-input100"></span>
-					</div>
+                <!-- Expired message -->
+                <div class="alert" style="    
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;">
+                    <i class="icon-info-sign"></i>
+                    <b>Please Note: You are welcome to Women in Statistics - Ghana Club ( WIS-GH ). Use the link bellow to join WIS club and meet other women in statistics.</b> 
+                    <div class="col-12 text-center"><a class="btn text-white" href="./index.php" style="background-color: #D492E8;"> <i class="fa fa-plus"></i> Join Wis</a></div></div>
 
-					<div class="wrap-input100">
-						<span class="label-input100">Other Name(s)</span>
-						<input class="input100" type="text" name="othername" placeholder1234="Other Name(s)...">
-						<span class="focus-input100"></span>
-					</div>
+                <div class="main">
+                    <div class="card mx-2 px-4" id="job_main" style="
+    background: white;
+    /*padding: 0.625em;*/
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    border-top: 16px solid #D492E8;">
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="email" name="email" placeholder1234="Email addess...">
-						<span class="focus-input100"></span>
-					</div>
+                        <!-- Introduction -->
+                        <div>
+                            <h3 class="mt-4">About WIS</h3>
+                            <p>Women In Statistics, Ghana is a wing of the Ghana Statistical Association. Its objective is <em>to promote Ghanaian women in statistics through advocacy, education, and research.</em></p>
+                        </div> 
+                    </div>
 
-					<div class="wrap-input100">
-						<span class="label-input100">Phone</span>
-						<input class="input100" type="text" name="phone" placeholder1234="Phone...">
-						<span class="focus-input100"></span>
-					</div>
+                </div>
 
-					<div class="wrap-input100 validate-input" data-validate = "required">
-						<span class="label-input100">Institutional Category</span>
-						<select class="mdb-select md-form input100 border-0" name="category">
-							<option style="font-style: italic;" value="" disabled selected>Select One</option>
-							<option value="Senior High School">Senior High School</option>
-							<option value="Regular University (UnderGraduate)">Regular University (UnderGraduate)</option>
-							<option value="Regular University (Graduate)">Regular University (Graduate)</option>
-							<option value="Technical University (UnderGraduate)">Technical University (UnderGraduate)</option>
-							<option value="Technical University (Graduate)">Technical University (Graduate)</option>
-						</select>
-						<span class="focus-input100"></span>
-					</div>
+                <script src='https://www.google.com/recaptcha/api.js'></script>
 
-					<div class="wrap-input100 validate-input" data-validate="Institution is required">
-						<span class="label-input100">Name of your institution</span>
-						<input class="input100" type="text" name="nameofinstitution" placeholder1234="Last Name...">
-						<span class="focus-input100"></span>
-					</div>
+            </div> 
+        </div>
+    </div>  
 
-					<div class="wrap-input100 validate-input" data-validate="Institution is required">
-						<span class="label-input100">Program of study</span>
-						<input class="input100" type="text" name="program" placeholder1234="Last Name...">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 border-0 validate-input">
-						<span class="label-input100">Statistics is/was my major?</span>
-						<p class="mt-2">
-							<label class="mr-5" style="cursor: pointer;"><input style="" type="radio" name="major" value="major"> Yes</label>
-							<label style="cursor: pointer;" ><input style="" type="radio" name="major" value="minor"> No</label>
-						</p>
-					</div>
-
-					<div class="container-login100-form-btn d-flex" style="justify-content: center;">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Submit
-							</button>
-						</div>
-
-						<!-- <a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Sign in
-							<i class="fa fa-long-arrow-right m-l-5"></i>
-						</a> -->
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-<!--===============================================================================================-->
-	<script src="public/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="public/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="public/bootstrap/js/popper.js"></script>
-	<script src="public/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="public/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="public/daterangepicker/moment.min.js"></script>
-	<script src="public/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="public/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-	<script type="text/javascript">
-		// Material Select Initialization
-            $(document).ready(function() {
-            $('.mdb-select').materialSelect();
-            });
-	</script>
-
+    <script src="public/bootstrap/js/popper.js"></script>
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
