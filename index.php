@@ -13,7 +13,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="https://careerssearch.bbc.co.uk/application/assets/22/images/favico.ico" type="image/x-icon" />
+<!--     <link rel="icon" href="https://careerssearch.bbc.co.uk/application/assets/22/images/favico.ico" type="image/x-icon" /> -->
     <title>
         Women in Statistics | Welcome to WIS </title>
 
