@@ -5,7 +5,7 @@ $shs = "https://chat.whatsapp.com/GeqBLPA46oACCnuP9DuiNj";
 $link = "";
 if(isset($_GET["verify"])){
   if($_GET['code'] == "0"){
-    $link = $tergrad;
+    $link = $tergrad;;
   }else if($_GET['code']=="1"){
     $link = $terunder;
   }else if($_GET['code']=="2"){
@@ -106,6 +106,8 @@ if(isset($_GET["verify"])){
             <p class="text-center">You are welcome to Women in Statistics - Ghana Club ( WIS-GH )<br>
                 This link is strictly for females in Statistics and Affiliates.<br>
                 Please do not share link.</p>
+                <div class="col-12 text-center"><a class="btn text-white" href="<?php echo $link; ?>" style="background-color: #D492E8;"> <i class="fa fa-plus" style=""></i> Click to join a WIS Club<br> on Whatsapp</a></div>
+                <div class="col-12 text-center mt-3"><a class="btn text-white" href="tel:+233503432856" style="background-color: #D492E8;"> <i class="fa fa-dollar"></i> Donate via MOMO<br>+233503432856</a></div>
         </div>
     </div>
     <section>
