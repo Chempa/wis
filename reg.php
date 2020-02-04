@@ -29,8 +29,6 @@
 			}else{
 				$code = -1;
 			}
-			echo $category;
-			exit(0);
 			header( "Location: social.php?verify=HjAkw123&code=$code");
 		}
 		else if($ret == 0){
