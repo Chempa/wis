@@ -14,15 +14,7 @@
 		$u = new User();
 		$ret = $u->insert($con, $obj);
 		if($ret == 1){
-// 			<select class="mdb-select md-form input100 border-0" name="category">
-// 				<option style="font-style: italic;" value="" disabled selected>Select One</option>
-// 				<option value="Senior High School">Senior High School</option>
-// 				<option value="Regular University (UnderGraduate)">Regular University (UnderGraduate)</option>
-// 				<option value="Regular University (Graduate)">Regular University (Graduate)</option>
-// 				<option value="Technical University (UnderGraduate)">Technical University (UnderGraduate)</option>
-// 				<option value="Technical University (Graduate)">Technical University (Graduate)</option>
-// 			</select>
-			echo "1 USER CREATED";
+			$category = $obj['category'];
 			$code = "";
 			if($category == "Senior High School"){
 				$code = 2;
