@@ -12,21 +12,14 @@ This site is powered by tribepad.  More information available at www.tribepad.co
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-<!--     <link rel="icon" href="https://careerssearch.bbc.co.uk/application/assets/22/images/favico.ico" type="image/x-icon" /> -->
+    <meta charset="utf-8"> 
     <title>Women in Statistics | Welcome to WIS-GH CLUB</title>
 
     <meta name="description" content="Women in Statistics">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <meta property="og:image" content="https://careerssearch.bbc.co.uk/application/assets/22/images/social-logo.png" /> -->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://careerssearch.bbc.co.uk/assets/main?version=6" /> -->
-    <!-- <link rel="stylesheet" href="https://careerssearch.bbc.co.uk/application/assets/x/css/print.css?version=6&brand=22" media="print" /> -->
-    <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/jquery.js"></script>
-    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/script.js?version=6"></script>
-    <script type="text/javascript" src="https://careerssearch.bbc.co.uk/application/assets/x/js/html5shiv.js?version=6"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css"> 
 
 </head>
 
