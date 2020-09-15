@@ -13,7 +13,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
 
 <head>
     <meta charset="utf-8"> 
-    <title>Women in Statistics | Welcome to WIS-GH CLUB</title>
+    <title>Women in Statistics | Welcome to WIStats-GH CLUB</title>
 
     <meta name="description" content="Women in Statistics">
     <meta name="author" content="">
@@ -31,7 +31,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
         <div id="content" class="scroll job_page">
 
             <div>
-                <h1 class="job_title px-3 text-center">WIS - <em>Women in Statistics</em></h1>
+                <h1 class="job_title px-3 text-center">WIStats - <em>Women in Statistics</em></h1>
 
                 <!-- Expired message -->
                 <div class="alert" style="    
@@ -40,8 +40,8 @@ This site is powered by tribepad.  More information available at www.tribepad.co
     border: 1px solid transparent;
     border-radius: .25rem;">
                     <i class="icon-info-sign"></i>
-                    <b>Please Note: You are welcome to Women in Statistics - Ghana Club ( WIS-GH ). Use the link bellow to join WIS club and meet other women in statistics.</b> 
-                    <div class="col-12 text-center"><a class="btn text-white" href="./reg.php" style="background-color: #D492E8;"> <i class="fa fa-plus"></i> Join Wis</a></div></div>
+                    <b>Please Note: You are welcome to Women in Statistics - Ghana Club ( WIStats-GH ). Use the link bellow to join WIStats club and meet other women in statistics.</b> 
+                    <div class="col-12 text-center"><a class="btn text-white" href="./reg.php" style="background-color: #D492E8;"> <i class="fa fa-plus"></i> Join Wistats</a></div></div>
 
                 <div class="main">
                     <div class="card mx-2 px-4" id="job_main" style="
@@ -53,7 +53,7 @@ This site is powered by tribepad.  More information available at www.tribepad.co
 
                         <!-- Introduction -->
                         <div>
-                            <h3 class="mt-4">About WIS</h3>
+                            <h3 class="mt-4">About WIStats</h3>
                             <p>Women In Statistics, Ghana is a wing of the Ghana Statistical Association. Its objective is <em>to promote Ghanaian women in statistics through advocacy, education, and research.</em></p>
                         </div> 
                     </div>
