@@ -107,37 +107,37 @@
 
 					<div class="wrap-input100 validate-input" data-validate="First Name is required">
 						<span class="label-input100">First Name</span>
-						<input class="input100" type="text" name="firstname" placeholder1234="FirstName...">
+						<input class="input100" type="text" name="firstname" placeholder1234="FirstName..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Last Name is required">
 						<span class="label-input100">Last Name</span>
-						<input class="input100" type="text" name="lastname" placeholder1234="Last Name...">
+						<input class="input100" type="text" name="lastname" placeholder1234="Last Name..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100">
 						<span class="label-input100">Other Name(s)</span>
-						<input class="input100" type="text" name="othername" placeholder1234="Other Name(s)...">
+						<input class="input100" type="text" name="othername" placeholder1234="Other Name(s)..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="email" name="email" placeholder1234="Email addess...">
+						<input class="input100" type="email" name="email" placeholder1234="Email addess..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100">
 						<span class="label-input100">Phone</span>
-						<input class="input100" type="text" name="phone" placeholder1234="Phone...">
+						<input class="input100" type="text" name="phone" placeholder1234="Phone..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "required">
 						<span class="label-input100">Institutional Category</span>
-						<select class="mdb-select md-form input100 border-0" name="category">
+						<select class="mdb-select md-form input100 border-0" name="category" required>
 							<option style="font-style: italic;" value="" disabled selected>Select One</option>
 							<option value="Senior High School">Senior High School</option>
 							<option value="Regular University (UnderGraduate)">Regular University (UnderGraduate)</option>
@@ -150,13 +150,13 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Institution is required">
 						<span class="label-input100">Name of your institution</span>
-						<input class="input100" type="text" name="nameofinstitution" placeholder1234="Last Name...">
+						<input class="input100" type="text" name="nameofinstitution" placeholder1234="Institution..." required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Institution is required">
 						<span class="label-input100">Program of study</span>
-						<input class="input100" type="text" name="program" placeholder1234="Last Name...">
+						<input class="input100" type="text" name="program" placeholder1234="Program..." required>
 						<span class="focus-input100"></span>
 					</div>
 
