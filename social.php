@@ -20,7 +20,7 @@ if(isset($_GET["verify"])){
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WIStat - social</title>
+    <title>WIStats - social</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
     <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
@@ -103,10 +103,10 @@ if(isset($_GET["verify"])){
             <div class="row" style="justify-content: center; align-items: center;s">
                 <p class="" style="display: flex; justify-content: center; align-items: center;"><img src="./txt wis.png" class="centered" style=""></p>
             </div>
-            <p class="text-center">You are welcome to Women in Statistics - Ghana Club ( WIStat-GH )<br>
+            <p class="text-center">You are welcome to Women in Statistics - Ghana Club ( WIStats-GH )<br>
                 This link is strictly for females in Statistics and Affiliates.<br>
                 Please do not share link.</p>
-                <div class="col-12 text-center"><a class="btn text-white" href="<?php echo $link; ?>" style="background-color: #D492E8;"> <i class="fa fa-plus" style=""></i> Click to join a WIStat Club<br> on Whatsapp</a></div>
+                <div class="col-12 text-center"><a class="btn text-white" href="<?php echo $link; ?>" style="background-color: #D492E8;"> <i class="fa fa-plus" style=""></i> Click to join a WIStats Club<br> on Whatsapp</a></div>
                 <div class="col-12 text-center mt-3"><a class="btn text-white" href="tel:+233503432856" style="background-color: #D492E8;"> <i class="fa fa-dollar"></i> Donate via MOMO<br>+233503432856</a></div>
         </div>
     </div>
@@ -117,7 +117,7 @@ if(isset($_GET["verify"])){
 
             <li>
                 <div class="facebook bg-gradient-white">
-                    <a href="https://web.facebook.com/WIStattatisticsGhana/">
+                    <a href="https://web.facebook.com/wisstatisticsGhana/">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -125,7 +125,7 @@ if(isset($_GET["verify"])){
             </li>
             <li>
                 <div class="twitter">
-                    <a href="https://twitter.com/WIStat_Ghana?s=08">
+                    <a href="https://twitter.com/wis_Ghana?s=08">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                 </div>
