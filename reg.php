@@ -32,10 +32,10 @@
 			header( "Location: social.php?verify=HjAkw123&code=$code");
 		}
 		else if($ret == 0){
-			echo "0 USER EXISTS";
+// 			echo "0 USER EXISTS";
 		}else
 		{
-			echo "-1 CREATE FAILED";
+// 			echo "-1 CREATE FAILED";
 		}
 	}else{
 
